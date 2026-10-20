@@ -2,82 +2,98 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>INSS APROVA Premium</title>
+<title>INSS APROVA — Premium</title>
 <style>
-:root{--navy:#082b59;--navy2:#041f43;--blue:#1167e8;--bg:#f3f7fc;--text:#102746;--muted:#6d8099;--card:#fff;--green:#24b47e;--yellow:#f6b91f;--purple:#7457e8}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}
-button{font:inherit}.app{min-height:100vh}.top{height:76px;background:linear-gradient(90deg,var(--navy2),var(--navy));color:#fff;display:flex;align-items:center;gap:24px;padding:0 28px;position:sticky;top:0;z-index:5}
-.brand{font-weight:900;font-size:24px;white-space:nowrap}.brand b{color:#ffc42d}.search{max-width:500px;flex:1;background:#fff;color:#8090a4;border-radius:24px;padding:13px 18px}.student{margin-left:auto;font-size:14px}
-.sidebar{position:fixed;top:76px;bottom:0;width:202px;background:linear-gradient(#062a59,#031f44);padding:18px 10px;color:#eaf2ff;overflow:auto}
-.nav button{width:100%;border:0;background:transparent;color:inherit;text-align:left;padding:13px 16px;border-radius:10px;margin:2px 0;cursor:pointer}.nav button.active,.nav button:hover{background:#164f91}.quote{border:1px solid #31567e;border-radius:12px;padding:14px;margin-top:24px;font-size:13px}
-main{margin-left:202px;padding:18px;max-width:1280px}.hero{background:linear-gradient(120deg,#104694,#0870da);color:white;border-radius:15px;padding:26px;min-height:166px;display:flex;justify-content:space-between;overflow:hidden}.hero h1{margin:0 0 8px;font-size:30px}.hero .seal{font-size:72px;opacity:.22;align-self:center}
-.grid2{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:16px}.card{background:var(--card);border:1px solid #e0e8f2;border-radius:14px;padding:18px;box-shadow:0 4px 18px #173a6810}.progressWrap{display:flex;gap:24px;align-items:center}.ring{width:116px;height:116px;border-radius:50%;background:conic-gradient(var(--green) 0deg,#e7edf5 0);display:grid;place-items:center}.ring:after{content:"";width:84px;height:84px;background:#fff;border-radius:50%;position:absolute}.ring span{z-index:1;font-size:28px;font-weight:900}.stats{display:grid;gap:10px;flex:1}.stat{display:flex;justify-content:space-between;gap:20px}
-.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:16px 0}.quick .card{color:#fff;min-height:100px}.q1{background:linear-gradient(135deg,#7656ee,#997df5)}.q2{background:linear-gradient(135deg,#20b87d,#55d49d)}.q3{background:linear-gradient(135deg,#0876e7,#35a0ee)}.q4{background:linear-gradient(135deg,#f0b725,#ffd86b);color:#19304d!important}
-.content{display:grid;grid-template-columns:2fr 1fr;gap:16px}.continue{display:flex;gap:18px;align-items:center}.thumb{width:150px;height:105px;border-radius:12px;background:linear-gradient(135deg,#1b3c64,#d7b36d);display:grid;place-items:center;font-size:50px}.bar{height:8px;background:#e3eaf3;border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:#2694eb;width:0}.btn{background:#0d66ee;color:#fff;border:0;border-radius:9px;padding:11px 16px;cursor:pointer}.modules{margin-top:16px}.module{display:grid;grid-template-columns:44px 1fr 110px 75px;align-items:center;gap:12px;padding:11px 4px;border-bottom:1px solid #edf1f6}.num{width:38px;height:38px;border-radius:9px;background:#176cf0;color:#fff;display:grid;place-items:center;font-weight:800}.module small{color:var(--muted)}.sidecol{display:grid;gap:16px;align-content:start}.task{display:flex;gap:9px;margin:11px 0}.check{width:21px;height:21px;border-radius:50%;border:2px solid #9aabc0}.check.done{background:var(--green);border-color:var(--green)}.subject{margin:10px 0}.subjectline{display:grid;grid-template-columns:105px 1fr 38px;gap:8px;align-items:center;font-size:13px}.mini{height:8px;background:#e5ebf2;border-radius:8px}.mini i{display:block;height:100%;background:var(--green);border-radius:8px}.bottom{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}.bottom .card{min-height:90px}
-.view{display:none}.view.active{display:block}.lesson{max-width:850px}.slide{min-height:360px;display:grid;place-items:center;text-align:center;padding:40px}.answers label{display:block;padding:12px;border:1px solid #dce5ef;border-radius:9px;margin:8px 0}.notice{background:#fff7d6;padding:12px;border-radius:9px}
-@media(max-width:850px){.top{height:auto;min-height:72px;padding:12px 14px;flex-wrap:wrap}.search{order:3;flex-basis:100%;max-width:none}.student{font-size:12px}.sidebar{position:static;width:auto;padding:8px;display:flex;overflow:auto}.nav{display:flex}.nav button{white-space:nowrap}.quote{display:none}main{margin-left:0;padding:12px}.grid2,.content{grid-template-columns:1fr}.quick,.bottom{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:24px}.hero .seal{display:none}.module{grid-template-columns:40px 1fr 60px}.module .bar{display:none}}
-</style></head>
-<body><div class="app">
-<header class="top"><div class="brand">🎓 INSS <b>APROVA</b><div style="font-size:11px;color:#ffc42d">♛ PREMIUM</div></div><div class="search">⌕ Buscar aulas, temas ou simulados...</div><div class="student">🔔 &nbsp; 👤 Olá, Estudante!<br><b>Foco total! 🚀</b></div></header>
-<aside class="sidebar"><nav class="nav" id="nav">
-<button class="active" data-v="home">🏠 &nbsp; Início</button><button data-v="aulas">🎓 &nbsp; Minhas aulas</button><button data-v="modules">▦ &nbsp; Módulos</button><button data-v="sim">📝 &nbsp; Simulados</button><button data-v="questions">☑ &nbsp; Questões</button><button data-v="performance">📊 &nbsp; Desempenho</button><button data-v="schedule">📅 &nbsp; Cronograma</button><button data-v="extras">📁 &nbsp; Materiais extras</button><button data-v="notes">📝 &nbsp; Minhas anotações</button><button data-v="achievements">🏆 &nbsp; Conquistas</button><button data-v="settings">⚙️ &nbsp; Configurações</button></nav><div class="quote">🎯 <b>Rumo à aprovação!</b><br><br>“Disciplina hoje, sua nomeação amanhã.”</div></aside>
-<main>
-<section id="home" class="view active">
-<div class="hero"><div><h1>Bem-vindo ao INSS APROVA!</h1><div>Seu cursinho para Técnico do Seguro Social.</div><p>“Estude com constância, porque a vaga no INSS pode ser a sua realidade.”</p></div><div class="seal">🏛️</div></div>
-<div class="grid2"><div class="card"><b>🎯 Seu progresso geral</b><div class="progressWrap"><div class="ring"><span id="pct">0%</span></div><div class="stats"><div class="stat"><span>🟢 Aulas concluídas</span><b id="classes">0 de 138</b></div><div class="stat"><span>🟢 Questões resolvidas</span><b id="qs">0 de 1.000</b></div><div class="stat"><span>🟣 Simulados</span><b id="sims">0 de 20</b></div></div></div></div>
-<div class="card"><b>🔥 Sequência de estudos</b><h2 id="streak">0 dias</h2><span>Comece hoje e construa sua sequência.</span></div></div>
-<div class="quick"><div class="card q1"><b>📖 Aulas</b><p><span id="qa">0</span> / 138 concluídas</p></div><div class="card q2"><b>❔ Questões</b><p><span id="qq">0</span> resolvidas</p></div><div class="card q3"><b>📄 Simulados</b><p><span id="qsim">0</span> realizados</p></div><div class="card q4"><b>🏆 Conquistas</b><p><span id="medals">0</span> medalhas</p></div></div>
-<div class="content"><div>
-<div class="card"><h2>Continuar estudando</h2><div class="continue"><div class="thumb">📚</div><div style="flex:1"><small>Direito Previdenciário</small><h3>Seguridade Social</h3><p>Aula 1 de 20</p><div class="bar"><i id="lessonbar"></i></div><br><button class="btn" onclick="openLesson()">Continuar aula ▶</button></div></div></div>
-<div class="card modules"><h2>Seus módulos</h2><div id="moduleList"></div></div>
-<div class="bottom"><div class="card">📝<h3>Simulados</h3><small>20 simulados planejados</small></div><div class="card">✅<h3>Questões</h3><small>Banco de exercícios</small></div><div class="card">📁<h3>Materiais extras</h3><small>Resumos e links oficiais</small></div><div class="card">⭐<h3>Minhas anotações</h3><small>Seus resumos</small></div></div>
-</div><div class="sidecol">
-<div class="card"><b>📅 Cronograma de hoje</b><div class="task"><span class="check"></span><span>Aula: Seguridade Social<br><small>40 min</small></span></div><div class="task"><span class="check"></span><span>10 questões da aula<br><small>20 min</small></span></div><div class="task"><span class="check"></span><span>Revisão rápida<br><small>15 min</small></span></div><button class="btn" onclick="go('schedule')">Abrir cronograma</button></div>
-<div class="card"><b>📊 Desempenho por matéria</b><div id="subjectBars"></div></div>
-<div class="card"><b>🏆 Ranking pessoal</b><p>Complete avaliações para formar seu ranking por matéria.</p></div>
+*{box-sizing:border-box} :root{--nav:#071d49;--blue:#0967f2;--bg:#f4f7fb;--text:#13223b;--muted:#71809a}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.app{display:grid;grid-template-columns:205px 1fr;min-height:100vh}
+aside{background:linear-gradient(180deg,#061b45,#06377c);color:white;padding:22px 14px;position:fixed;width:205px;height:100vh;overflow:auto}
+.logo{font-size:21px;font-weight:900;margin:0 5px 28px}.logo b{color:#ffca31}.premium{font-size:10px;color:#ffca31;display:block;margin-left:28px}
+nav button{width:100%;border:0;background:transparent;color:#e7efff;padding:12px 13px;border-radius:10px;text-align:left;margin:2px 0;font-weight:600;cursor:pointer}
+nav button:hover,nav button.active{background:#18539d}.quote{margin-top:24px;border:1px solid #3b67a1;border-radius:12px;padding:14px;font-size:11px;line-height:1.5}
+main{grid-column:2}.top{height:70px;background:#08245a;display:flex;align-items:center;padding:0 24px;gap:20px;color:white;position:sticky;top:0;z-index:4}
+.search{flex:1;max-width:520px;background:white;border-radius:24px;padding:12px 18px;color:#8792a7}.user{margin-left:auto;font-size:13px}
+.content{padding:20px;max-width:1280px;margin:auto}.hero{min-height:168px;border-radius:17px;padding:27px;color:white;background:linear-gradient(105deg,#074fa9,#1479ee);position:relative;overflow:hidden}
+.hero:after{content:"INSS";position:absolute;right:38px;top:27px;font-size:70px;font-weight:900;color:#fff2;transform:skew(-8deg)}
+.hero h1{font-size:27px;margin:0 0 7px}.hero p{margin:7px 0;max-width:520px}
+.grid{display:grid;grid-template-columns:minmax(0,2.1fr) minmax(260px,.85fr);gap:16px;margin-top:16px}
+.card{background:white;border:1px solid #e1e7f0;border-radius:15px;padding:18px;box-shadow:0 4px 15px #16335b0c}
+.progressrow{display:grid;grid-template-columns:105px 1fr;align-items:center;gap:18px}.ring{width:92px;height:92px;border-radius:50%;background:conic-gradient(#21b77a 0%,#e8edf4 0);display:grid;place-items:center;font-size:24px;font-weight:900}.ring:after{content:"";position:absolute}.ring span{background:#fff;width:70px;height:70px;border-radius:50%;display:grid;place-items:center}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:14px 0}.stat{border-radius:13px;padding:16px;color:white;min-height:95px}.purple{background:linear-gradient(135deg,#7656f7,#9b65ef)}.green{background:linear-gradient(135deg,#1fc477,#53d69d)}.cyan{background:linear-gradient(135deg,#168dea,#23b4ed)}.yellow{background:linear-gradient(135deg,#ffc43d,#ffdb69);color:#4c3b08}
+.sectiontitle{font-size:18px;font-weight:850;margin-bottom:13px}.continue{display:grid;grid-template-columns:145px 1fr;gap:16px;align-items:center}.thumb{height:105px;border-radius:12px;background:linear-gradient(135deg,#e6b96d,#24324d);display:grid;place-items:center;color:white;font-weight:900;font-size:24px}
+.bar{height:7px;background:#e6ebf2;border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:#24b578;width:0}.btn{border:0;background:#0867ef;color:white;border-radius:9px;padding:10px 16px;font-weight:750;cursor:pointer}
+.modules{margin-top:15px}.module{display:grid;grid-template-columns:42px 1fr 90px 72px;gap:12px;align-items:center;padding:10px 4px;border-bottom:1px solid #eef1f6}.num{height:38px;border-radius:9px;background:#0871ef;color:white;display:grid;place-items:center;font-weight:900}.module small{color:var(--muted)}.rightcol{display:grid;gap:16px;align-content:start}.streak strong{font-size:30px}.check{margin:11px 0;font-size:13px}.check:before{content:"✓";display:inline-grid;place-items:center;width:21px;height:21px;border-radius:50%;background:#20b878;color:white;margin-right:8px}.perf{display:grid;grid-template-columns:105px 1fr 35px;gap:8px;align-items:center;font-size:12px;margin:9px 0}.mini{height:7px;background:#e8edf4;border-radius:8px}.mini i{display:block;height:100%;width:0;background:#20b878;border-radius:8px}.bottomcards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:15px}.bottomcards .card{min-height:100px}.hidden{display:none!important}
+.lesson h2{margin-top:0}.slide{background:#f5f8fd;border-left:4px solid #0867ef;border-radius:10px;padding:18px;line-height:1.65}.question{padding:13px 0;border-bottom:1px solid #e8edf3}.question label{display:block;padding:5px}.result{padding:14px;border-radius:10px;background:#eef7ff;margin-top:12px}
+@media(max-width:850px){.app{display:block}aside{position:relative;width:100%;height:auto}.top{position:relative}.grid{grid-template-columns:1fr}.stats,.bottomcards{grid-template-columns:1fr 1fr}.module{grid-template-columns:38px 1fr 65px}.module .bar{display:none}main{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside><div class="logo">🎓 INSS <b>APROVA</b><span class="premium">♛ PREMIUM 2.0</span></div>
+<nav>
+<button class="active" onclick="show('home',this)">🏠　Início</button>
+<button onclick="show('aulas',this)">🎓　Minhas aulas</button>
+<button onclick="show('modules',this)">▦　Módulos</button>
+<button onclick="show('sim',this)">📄　Simulados</button>
+<button onclick="show('questions',this)">☑　Questões</button>
+<button onclick="show('performance',this)">📊　Desempenho</button>
+<button onclick="show('schedule',this)">🗓️　Cronograma</button>
+<button onclick="show('extras',this)">📁　Materiais extras</button>
+<button onclick="show('notes',this)">📝　Minhas anotações</button>
+<button onclick="show('favorites',this)">♥　Favoritos</button>
+<button onclick="show('achievements',this)">🏆　Conquistas</button>
+<button onclick="show('settings',this)">⚙️　Configurações</button>
+</nav><div class="quote">🎯 <b>Rumo à aprovação!</b><br><br>“Disciplina hoje, sua nomeação amanhã.”</div></aside>
+<main><header class="top"><div class="search">⌕ Buscar aulas, temas ou simulados...</div><div>🔔</div><div class="user">👨🏻‍🎓　Olá, Estudante!<br><small>Foco total! 🚀</small></div></header>
+<div class="content">
+<section id="home" class="page">
+<div class="hero"><h1>Bem-vindo ao INSS APROVA!</h1><p>Seu cursinho completo para Técnico do Seguro Social.</p><p><i>“Estude com constância, porque a vaga no INSS pode ser a sua realidade.”</i></p></div>
+<div class="grid"><div>
+<div class="card"><div class="sectiontitle">🎯 Seu progresso geral</div><div class="progressrow"><div class="ring"><span id="pct">0%</span></div><div><p>🟢 Aulas concluídas　 <b id="lessons">0 de 138</b></p><p>🟢 Questões resolvidas　 <b id="qcount">0 de 1.000</b></p><p>🟣 Simulados　 <b id="simcount">0 de 20</b></p></div></div></div>
+<div class="stats"><div class="stat purple"><b>📖 Aulas</b><p id="slessons">0 / 138 concluídas</p></div><div class="stat green"><b>❔ Questões</b><p id="sq">0 resolvidas</p></div><div class="stat cyan"><b>📄 Simulados</b><p id="ss">0 realizados</p></div><div class="stat yellow"><b>🏆 Conquistas</b><p id="medals">0 medalhas</p></div></div>
+<div class="card"><div class="sectiontitle">Continuar estudando</div><div class="continue"><div class="thumb">INSS</div><div><small>Direito Previdenciário</small><h3>Seguridade Social</h3><div class="bar"><i id="coursebar"></i></div><br><button class="btn" onclick="show('aulas')">Continuar aula ▶</button></div></div></div>
+<div class="card modules"><div class="sectiontitle">Seus módulos</div><div id="moduleList"></div></div>
+<div class="bottomcards"><div class="card">📕<h3>Simulados</h3><small>20 simulados</small></div><div class="card">✅<h3>Questões</h3><small>Banco de questões</small></div><div class="card">📁<h3>Materiais extras</h3><small>Resumos e legislação</small></div><div class="card">⭐<h3>Minhas anotações</h3><small>Seus resumos</small></div></div>
+</div><div class="rightcol">
+<div class="card streak"><div class="sectiontitle">🔥 Sequência de estudos</div><strong>0 dias</strong><p>Comece hoje sua sequência!</p></div>
+<div class="card"><div class="sectiontitle">🗓️ Cronograma de hoje</div><div class="check">Aula: Seguridade Social — 40 min</div><div class="check">10 questões — 20 min</div><div>○ Revisão — 25 min</div><br><button class="btn">Continuar cronograma</button></div>
+<div class="card"><div class="sectiontitle">📊 Desempenho por matéria</div><div id="perf"></div></div>
+<div class="card"><div class="sectiontitle">🏆 Ranking de desempenho</div><p>🥇 — Comece a responder questões</p><p>🥈 — Seus resultados aparecerão aqui</p></div>
 </div></div></section>
-<section id="aulas" class="view"><div class="card"><h1>Minhas aulas</h1><p>Escolha uma matéria e continue seus estudos.</p><div id="lessonModules"></div></div></section>
-<section id="modules" class="view"><div class="card"><h1>Módulos</h1><div id="moduleList2"></div></div></section>
-<section id="sim" class="view"><div class="card"><h1>Simulados</h1><p>Área preparada para simulados de 30 questões e provas completas.</p><button class="btn" onclick="addSim()">Registrar simulado concluído</button></div></section>
-<section id="questions" class="view"><div class="card"><h1>Questões</h1><p>As avaliações das aulas terão 10 questões. O gabarito aparece somente depois do envio.</p><button class="btn" onclick="openLesson()">Abrir avaliação da Aula 1</button></div></section>
-<section id="performance" class="view"><div class="card"><h1>Desempenho</h1><p>Seu desempenho será calculado com base nas atividades realmente concluídas.</p><div id="perfDetail"></div></div></section>
-<section id="schedule" class="view"><div class="card"><h1>Cronograma</h1><p>Hoje: Aula de Seguridade Social → 10 questões → revisão.</p></div></section>
-<section id="extras" class="view"><div class="card"><h1>Materiais extras</h1><p>Espaço para legislação, resumos, PDFs e links oficiais.</p></div></section>
-<section id="notes" class="view"><div class="card"><h1>Minhas anotações</h1><textarea id="notesBox" style="width:100%;height:260px;padding:14px" placeholder="Escreva suas anotações..."></textarea><br><br><button class="btn" onclick="saveNotes()">Salvar anotações</button></div></section>
-<section id="achievements" class="view"><div class="card"><h1>Conquistas</h1><p>🥉 Bronze: 70–79% &nbsp; 🥈 Prata: 80–89% &nbsp; 🥇 Ouro: 90–100%</p><h2 id="awardText">Nenhuma medalha conquistada ainda.</h2></div></section>
-<section id="settings" class="view"><div class="card"><h1>Configurações</h1><label>Nome do aluno<br><input id="studentName" style="padding:10px;width:100%;max-width:360px" value="Estudante"></label><br><br><button class="btn" onclick="saveName()">Salvar perfil</button></div></section>
-<section id="lesson" class="view lesson"><div class="card"><button class="btn" onclick="go('home')">← Voltar</button><h1>Direito Previdenciário • Aula 1</h1><div class="slide"><div><h2>Seguridade Social</h2><p>A seguridade social reúne ações destinadas a assegurar direitos relativos à saúde, à previdência e à assistência social.</p><p class="notice">Conteúdo inicial de estudo. Para preparação jurídica, confira sempre a legislação oficial vigente.</p></div></div><h2>Avaliação — 10 questões</h2><form id="quiz" class="answers"></form><button class="btn" onclick="submitQuiz()">Finalizar e liberar gabarito</button><div id="result"></div></div></section>
-</main></div>
+<section id="aulas" class="page hidden lesson"><div class="card"><h2>🎓 Minhas aulas</h2><p><b>Direito Previdenciário • Aula 1</b></p><div class="slide"><h3>Seguridade Social</h3><p>A Seguridade Social compreende um conjunto integrado de ações destinadas a assegurar os direitos relativos à saúde, à previdência e à assistência social.</p><p><b>Para a prova:</b> diferencie os três ramos. A previdência possui caráter contributivo; saúde e assistência social seguem regras próprias de acesso.</p></div><h3>Fixação — 10 questões</h3><form id="quiz"></form><button class="btn" onclick="grade()">Finalizar e liberar gabarito</button><div id="quizResult"></div></div></section>
+<section id="modules" class="page hidden"><div class="card"><h2>▦ Módulos</h2><div id="moduleList2"></div></div></section>
+<section id="sim" class="page hidden"><div class="card"><h2>📄 Simulados</h2><p>Área preparada para simulados de 30 questões. Seu resultado será registrado no painel.</p><button class="btn" onclick="alert('O banco completo de simulados será a próxima etapa de conteúdo.')">Iniciar simulado</button></div></section>
+<section id="questions" class="page hidden"><div class="card"><h2>☑ Banco de questões</h2><p>Questões organizadas por matéria, com acompanhamento de erros e acertos.</p></div></section>
+<section id="performance" class="page hidden"><div class="card"><h2>📊 Desempenho</h2><p>Seu desempenho começa zerado e será atualizado conforme você concluir atividades.</p></div></section>
+<section id="schedule" class="page hidden"><div class="card"><h2>🗓️ Cronograma</h2><p>Plano diário: teoria → 10 questões → revisão. Ajuste o ritmo conforme sua rotina.</p></div></section>
+<section id="extras" class="page hidden"><div class="card"><h2>📁 Materiais extras</h2><p>Área para resumos, legislação e materiais de revisão.</p></div></section>
+<section id="notes" class="page hidden"><div class="card"><h2>📝 Minhas anotações</h2><textarea id="note" style="width:100%;min-height:240px;padding:14px" placeholder="Escreva suas anotações..."></textarea><br><br><button class="btn" onclick="saveNote()">Salvar anotação</button></div></section>
+<section id="favorites" class="page hidden"><div class="card"><h2>♥ Favoritos</h2><p>Seus conteúdos favoritos aparecerão aqui.</p></div></section>
+<section id="achievements" class="page hidden"><div class="card"><h2>🏆 Conquistas</h2><p>🥉 Bronze: 70–79%　🥈 Prata: 80–89%　🥇 Ouro: 90–100%</p></div></section>
+<section id="settings" class="page hidden"><div class="card"><h2>⚙️ Configurações</h2><p>Perfil: Estudante • Curso: Técnico do Seguro Social</p><button class="btn" onclick="resetData()">Zerar meu progresso</button></div></section>
+</div></main></div>
 <script>
-const subjects=[["Língua Portuguesa",12,100],["Raciocínio Lógico-Matemático",10,80],["Informática",10,80],["Direito Constitucional",12,120],["Direito Administrativo",12,120],["Direito Previdenciário",20,200],["Ética no Serviço Público",6,60],["Legislação do INSS",8,80]];
-let state=JSON.parse(localStorage.getItem("inssState")||'{"classes":0,"questions":0,"sims":0,"medals":0,"scores":{}}');
-function save(){localStorage.setItem("inssState",JSON.stringify(state));render()}
-function render(){
- let pct=Math.round((state.classes/138)*100);document.querySelector(".ring").style.background=`conic-gradient(var(--green) ${pct*3.6}deg,#e7edf5 0)`;
- pctEl("pct",pct+"%");pctEl("classes",state.classes+" de 138");pctEl("qs",state.questions+" de 1.000");pctEl("sims",state.sims+" de 20");pctEl("qa",state.classes);pctEl("qq",state.questions);pctEl("qsim",state.sims);pctEl("medals",state.medals);
- const list=subjects.map((s,i)=>`<div class="module"><span class="num">${i+1}</span><div><b>${s[0]}</b><br><small>${s[1]} aulas | ${s[2]} questões</small></div><div class="bar"><i style="width:${state.scores[s[0]]||0}%"></i></div><button class="btn" onclick="openLesson()">Acessar</button></div>`).join("");
- ["moduleList","moduleList2","lessonModules"].forEach(id=>pctEl(id,list,true));
- pctEl("subjectBars",subjects.map(s=>`<div class="subject"><div class="subjectline"><span>${s[0]}</span><div class="mini"><i style="width:${state.scores[s[0]]||0}%"></i></div><b>${state.scores[s[0]]||0}%</b></div></div>`).join(""),true);
- pctEl("perfDetail",subjects.map(s=>`<p><b>${s[0]}</b>: ${state.scores[s[0]]||0}%</p>`).join(""),true);
-}
-function pctEl(id,v,html=false){let e=document.getElementById(id);if(e)e[html?"innerHTML":"textContent"]=v}
-function go(v){document.querySelectorAll(".view").forEach(x=>x.classList.remove("active"));document.getElementById(v).classList.add("active");document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x.dataset.v===v));scrollTo(0,0)}
-document.querySelectorAll(".nav button").forEach(b=>b.onclick=()=>go(b.dataset.v));
-const quizData=[
-["A seguridade social compreende saúde, previdência e assistência social.","C"],
-["A previdência social possui caráter contributivo.","C"],
-["A assistência social depende sempre de contribuição prévia.","E"],
-["A saúde integra a seguridade social.","C"],
-["A universalidade da cobertura é princípio da seguridade social.","C"],
-["Somente trabalhadores empregados podem acessar a previdência.","E"],
-["A assistência social integra a seguridade social.","C"],
-["A seguridade social é tratada pela Constituição Federal.","C"],
-["Saúde e previdência são exatamente o mesmo sistema.","E"],
-["O estudo da legislação vigente é essencial em Direito Previdenciário.","C"]];
-function openLesson(){go("lesson");document.getElementById("quiz").innerHTML=quizData.map((q,i)=>`<div><b>${i+1}. ${q[0]}</b><label><input type="radio" name="q${i}" value="C"> Certo</label><label><input type="radio" name="q${i}" value="E"> Errado</label></div>`).join("");pctEl("result","",true)}
-function submitQuiz(){let score=0,all=true;quizData.forEach((q,i)=>{let a=document.querySelector(`input[name=q${i}]:checked`);if(!a)all=false;else if(a.value===q[1])score++});if(!all){alert("Responda às 10 questões antes de finalizar.");return}let p=score*10;state.questions+=10;state.classes=Math.max(state.classes,1);state.scores["Direito Previdenciário"]=p;if(p>=70)state.medals=Math.max(state.medals,1);save();pctEl("result",`<div class="notice"><h2>Resultado: ${score}/10 (${p}%)</h2><p>${p>=90?"🥇 Ouro":p>=80?"🥈 Prata":p>=70?"🥉 Bronze":"Continue estudando e tente novamente."}</p><h3>Gabarito</h3>${quizData.map((q,i)=>`<p>${i+1}. ${q[1]} — ${q[0]}</p>`).join("")}</div>`,true)}
-function addSim(){state.sims++;save();alert("Simulado registrado.")}
-function saveNotes(){localStorage.setItem("inssNotes",document.getElementById("notesBox").value);alert("Anotações salvas neste navegador.")}
-function saveName(){localStorage.setItem("inssName",document.getElementById("studentName").value);alert("Perfil salvo neste navegador.")}
-document.getElementById("notesBox").value=localStorage.getItem("inssNotes")||"";document.getElementById("studentName").value=localStorage.getItem("inssName")||"Estudante";render();
+const mods=[['Língua Portuguesa','12 aulas | 100 questões'],['Raciocínio Lógico-Matemático','10 aulas | 80 questões'],['Informática','10 aulas | 80 questões'],['Direito Constitucional','12 aulas | 120 questões'],['Direito Administrativo','12 aulas | 120 questões'],['Direito Previdenciário','20 aulas | 200 questões'],['Ética no Serviço Público','6 aulas | 60 questões'],['Legislação do INSS','8 aulas | 80 questões']];
+function moduleHTML(){return mods.map((m,i)=>`<div class="module"><div class="num">${i+1}</div><div><b>${m[0]}</b><br><small>${m[1]}</small></div><div class="bar"><i></i></div><button class="btn" onclick="show('aulas')">Acessar</button></div>`).join('')}
+document.getElementById('moduleList').innerHTML=moduleHTML();document.getElementById('moduleList2').innerHTML=moduleHTML();
+document.getElementById('perf').innerHTML=mods.map(m=>`<div class="perf"><span>${m[0]}</span><div class="mini"><i></i></div><b>0%</b></div>`).join('');
+function show(id,btn){document.querySelectorAll('.page').forEach(x=>x.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));if(btn)btn.classList.add('active');window.scrollTo(0,0)}
+const qs=[
+['A Seguridade Social abrange:', ['apenas Previdência','Saúde, Previdência e Assistência Social','Saúde e Previdência apenas','Assistência e educação'],1],
+['A Previdência Social possui caráter:', ['contributivo','gratuito em todos os casos','facultativo para todo trabalhador','exclusivamente assistencial'],0],
+['A saúde, no sistema constitucional brasileiro, é:', ['direito de todos','restrita a segurados','restrita a contribuintes','benefício previdenciário'],0],
+['A assistência social é prestada:', ['somente a empregados','a quem dela necessitar, conforme a lei','somente a aposentados','somente a contribuintes'],1],
+['São áreas da Seguridade Social:', ['educação, saúde e trabalho','saúde, previdência e assistência','previdência, segurança e educação','assistência, habitação e trabalho'],1],
+['O custeio da Seguridade Social envolve:', ['apenas trabalhadores','apenas empresas','financiamento nos termos constitucionais','somente União'],2],
+['O princípio da universalidade relaciona-se à:', ['cobertura e atendimento','arrecadação exclusiva','privatização','restrição regional'],0],
+['A Previdência Social protege riscos previstos:', ['na legislação','somente em contrato privado','apenas por decisão empresarial','sem previsão normativa'],0],
+['Saúde e assistência se diferenciam da previdência porque:', ['não integram seguridade','possuem disciplina de acesso distinta da lógica contributiva previdenciária','são privadas','não possuem base constitucional'],1],
+['Para memorizar a Seguridade Social, a tríade correta é:', ['SAP: Saúde, Assistência e Previdência','PET: Previdência, Educação e Trabalho','SAT: Saúde, Assistência e Trabalho','PAS: Previdência, Administração e Saúde'],0]
+];
+document.getElementById('quiz').innerHTML=qs.map((q,i)=>`<div class="question"><b>${i+1}. ${q[0]}</b>${q[1].map((a,j)=>`<label><input type="radio" name="q${i}" value="${j}"> ${a}</label>`).join('')}</div>`).join('');
+function grade(){let ans=[],ok=0;for(let i=0;i<qs.length;i++){let x=document.querySelector(`input[name=q${i}]:checked`);if(!x){alert('Responda as 10 questões antes de liberar o gabarito.');return}ans.push(+x.value);if(+x.value===qs[i][2])ok++}let pct=ok*10;localStorage.setItem('inss_q','10');localStorage.setItem('inss_l','1');localStorage.setItem('inss_score',pct);document.getElementById('quizResult').innerHTML=`<div class="result"><b>Resultado: ${ok}/10 — ${pct}%</b><br><br>${qs.map((q,i)=>`${i+1}. Gabarito: <b>${q[1][q[2]]}</b> ${ans[i]===q[2]?'✅':'❌'}`).join('<br>')}</div>`;update()}
+function update(){let l=+(localStorage.getItem('inss_l')||0),q=+(localStorage.getItem('inss_q')||0);let p=Math.round(l/138*100);document.getElementById('pct').textContent=p+'%';document.getElementById('lessons').textContent=`${l} de 138`;document.getElementById('qcount').textContent=`${q} de 1.000`;document.getElementById('slessons').textContent=`${l} / 138 concluídas`;document.getElementById('sq').textContent=q+' resolvidas';document.querySelector('.ring').style.background=`conic-gradient(#21b77a ${p}%,#e8edf4 ${p}%)`;document.getElementById('coursebar').style.width=p+'%'}
+function saveNote(){localStorage.setItem('inss_note',document.getElementById('note').value);alert('Anotação salva neste navegador.')}
+function resetData(){if(confirm('Deseja realmente zerar o progresso?')){localStorage.removeItem('inss_q');localStorage.removeItem('inss_l');localStorage.removeItem('inss_score');update()}}
+document.getElementById('note').value=localStorage.getItem('inss_note')||'';update();
 </script></body></html>
